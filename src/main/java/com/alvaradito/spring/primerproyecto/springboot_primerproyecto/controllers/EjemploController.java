@@ -13,6 +13,8 @@ public class EjemploController {
     
     public String info(Model model){
         model.addAttribute("titulo", "Detalle de la información");
+        model.addAttribute("servidor","localhost:8080");
+        model.addAttribute("framework","Spring Boot");
         return "detalles_info";
     }
 }

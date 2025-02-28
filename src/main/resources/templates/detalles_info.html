@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thimeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Spring Boot</title>
+    <title th:text="${titulo}">Pagina Spring Boot</title>
 </head>
 <body>
 
+    <h1 th:text="${titulo}"></h1>
+    <h2 th:text="${servidor}"></h2>
+    <h2 th:text="${framework}"></h2>
 
 </body>
 </html>
