@@ -20,5 +20,26 @@
         <li><strong>Id:</strong> <span th:text="${empleado.id}"></span></li>
     </ul>
 
+    <h1>Lista de Empleados</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cargo</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="emp : ${empleados}">  <!-- 🔹 Recorre cada empleado en la lista -->
+                <td th:text="${emp.nombre}"></td>
+                <td th:text="${emp.apellido}"></td>
+                <td th:text="${emp.puesto}"></td>
+                <td th:text="${emp.edad}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
 </body>
 </html>
