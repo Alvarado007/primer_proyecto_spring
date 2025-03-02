@@ -14,8 +14,9 @@ public class EjemploController {
     @GetMapping("/detalles_info")
     
     public String info(Model model){ //dto tranfiero los datos desde model hacia mi vista 
-        empleados empleado1 = new empleados("Juan", "Perez", "Calle 123", "Gerente", 30, 12345678, 01);
+        empleados empleado1 = new empleados("Juan", "Perez", "tu mama", "Gerente", 30, 12345678, 01);
         model.addAttribute("empleado", empleado1);
+        model.addAttribute("titulo", "Detalle del empleado: ");
         return "detalles_info";
     }
 }
