@@ -5,7 +5,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.alvaradito.spring.primerproyecto.springboot_primerproyecto.models.empleados;
 import com.alvaradito.spring.primerproyecto.springboot_primerproyecto.models.dto.ParametroDTO;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 
 @RestController
@@ -18,4 +22,10 @@ public class PathVariableController {
         parametro1.setInformacion(mensaje);
         return parametro1;
     }
+    @PostMapping("/solicitud")
+    public empleados CrearEmpleado(@RequestBody empleados empleado3){
+        return empleado3;
+    }
+    
+    
 }

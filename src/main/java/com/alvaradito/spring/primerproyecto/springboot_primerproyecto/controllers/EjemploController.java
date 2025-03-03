@@ -33,4 +33,5 @@ public class EjemploController {
             new empleados("Juan", "Perez", "tu mama", "Gerente", 30, 12345678, 01)
         );
     }
+
 }
