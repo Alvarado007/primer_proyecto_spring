@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/api/variable")
 public class PathVariableController {
 
-    @GetMapping("/pagina1/{mensaje}")
+    @GetMapping("/pagina1/{mensaje}")//mensaje
     public ParametroDTO pagina1(@PathVariable String mensaje) {
         ParametroDTO parametro1 = new ParametroDTO();
         parametro1.setInformacion(mensaje);
         return parametro1;
     }
-    @PostMapping("/solicitud")
+    @PostMapping("/solicitud")//solicitud
     public empleados CrearEmpleado(@RequestBody empleados empleado3){
         return empleado3;
     }
