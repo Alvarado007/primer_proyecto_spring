@@ -53,5 +53,5 @@ public class PathVariableController {
     json.put("codigo", codigo);
     json.put("valores", valores);
     return json;
-    }
+    } //se trabajo en maven para que se pudiera correr el proyecto
 }
